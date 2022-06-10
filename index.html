@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
     <title>SabaWar</title>
 </head>
@@ -17,11 +15,11 @@
         <nav>
             <div class="logo"><img src="static/img/Logo.png" width="173.4px" height="47px" alt=""></div>
             <ul>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Расписание</a></li>
-                <li><a href="">Наши достижения</a></li>
-                <li><a href="">Галерея</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#opportunities">Наши преимущества</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </header>
@@ -31,13 +29,13 @@
         <div class="content">
             <div class="content-layer">
                 <div class="title-block">
-                    <p><span class="title" style="font-family: Neucha;">SabaWar - музыкальная группа<span
+                    <p><span class="title" style="font-family: Neucha;">SabaWar - музыкальная рок-группа<span
                                 style="color:#FFFFFF">&nbsp;</span></span></p>
                     <p><span style="color:#808080;"><strong><span style="font-size:32px"><span
                                         style="font-family:roboto">_____</span></span></strong></span></p>
                 </div>
                 <div class="sub-title-block">
-                    <p class="about-text" style="font-size: 20px;">Сайт создан для тех, кому интересна деятельность
+                    <p class="about-text">Сайт создан для тех, кому интересна деятельность
                         нашей
                         группы!&nbsp;Здесь вы
                         можете получить необходимую информацию о том, что происходит в жизни ее
@@ -45,11 +43,12 @@
                         к сотрудничеству и обмену информацией.
                     </p>
                 </div>
-                <div class="btn surround"> Задать вопрос </div>
+                <div class="btn surround"> <a href="#contact-us" style="text-decoration: none; color: #fff">Задать
+                        вопрос</a> </div>
             </div>
         </div>
     </div>
-    <div class="section schedule">
+    <div class="section schedule" id="schedule">
         <div class="title"><span style="color:#424242;"><span
                     style="font-size:28px">★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★</span></span>
         </div>
@@ -108,9 +107,9 @@
             </div>
         </div>
     </div>
-    <div class="section achievements">
+    <div class="section opportunities" id="opportunities">
         <div class="content">
-            <div class="title"><span style="color: #fff;font-size: 54px">Наши достижения</span></div>
+            <div class="title"><span style="color: #fff;font-size: 54px">Наши преимущества</span></div>
             <div class="content-items">
                 <div class="item">
                     <div class="item-icon">
@@ -165,7 +164,7 @@
         </div>
     </div>
 
-    <div class="section about">
+    <div class="section about" id="about">
         <div class="title"><span style="color:#424242;"><span
                     style="font-size:28px">★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★</span></span>
         </div>
@@ -178,21 +177,96 @@
                 <div class="description-title">О деятельности музыкальной группы</div>
                 <div class="description-content">
                     <p>
-                        Radio Tapok — творческий псевдоним и название YouTube-канала музыканта-мультиинструменталиста
-                        Олега Абрамова, который создает эквиритмичные переводы известных произведений[1], а также
+                        Sabawar — творческий псевдоним и название YouTube-канала музыканта-мультиинструменталиста
+                        Олега Абрамова, который создает эквиритмичные переводы известных произведений, а также
                         рок-версии российских и советских песен.
-
+                        <br><br>
                         Отличительной чертой работ является подстройка под характерный стиль оригинального исполнителя.
-                        Это стало одной из причин его популярности. Название было образовано из частей популярных групп - 
-                        Sabaton и Manowar. 
-
-                        Согласно Чеду Чайлдерсу Radio Tapok завоевало популярность в интернете, создавая русские
+                        Это стало одной из причин его популярности. Название было образовано из частей популярных групп
+                        -
+                        Sabaton и Manowar.
+                        <br><br>
+                        Согласно Чеду Чайлдерсу SabaWar завоевало популярность в интернете, создавая русские
                         кавер-песни таких групп, как Linkin Park, Rammstein, Sabaton и Twenty One Pilots.
                     </p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="section gallery" id="gallery">
+        <div class="title">
+            <span style="font-family: Neucha; font-size: 48px; text-align: center;">Фотографии концертов</span> <br>
+            <span style="font-size:36px"><strong>____</strong></span>
+        </div>
+        <div class="content">
+            <div class="gallery-image"><img src="static/img/gallery_content_1.jpg" alt=""></div>
+            <div class="gallery-image"><img src="static/img/gallery_content_2.jpg" alt=""></div>
+            <div class="gallery-image"><img src="static/img/gallery_content_3.jpg" alt=""></div>
+            <div class="gallery-image"><img src="static/img/gallery_content_4.jpg" alt=""></div>
+            <div class="gallery-image"><img src="static/img/gallery_content_5.jpg" alt=""></div>
+            <div class="gallery-image"><img src="static/img/gallery_content_6.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="section contact-us" id="contact-us">
+        <div class="bg-blur"></div>
+        <div class="content">
+            <div class="contact-form">
+                <form action="">
+                    <h2 class="title" style="font-family: Neucha; font-size: 32px;">Связаться с нами</h2>
+                    <label for="">Ваша почта</label>
+                    <input type="text" placeholder="Введите вашу почту...">
+                    <label for="">Задайте вопрос</label>
+                    <input type="text" placeholder="Введите ваш вопрос...">
+                    <div class="button-wrapper">
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section contacts" id="contacts">
+        <div class="title"><span style="color:#424242;"><span
+                    style="font-size:28px">★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★</span></span>
+        </div>
+        <div style="font-family: Neucha; font-size: 48px; text-align: center;" class="sub-title">Контактная информация
+        </div>
+        <div class="content">
+            <div class="contacts-content">
+                <span style="font-size: 28px; font-family: Neucha;">Контактная информация:</span>
+                <br><br>
+                <span style="font-size: 18px;"> <br>
+                    E-mail: radiotapok@adisom.com <br>
+                    Телефон: 8 800 555 35 35 - Вопросы <br>
+                    Телефон: 8 800 555 35 35 - Реклама <br>
+                    Контактное лицо: Абрамов Олежа <br></span>
+            </div>
+            <div class="social-icons-block">
+                <span style="font-size: 24px; font-family: Neucha;">Присоединяйтесь к нам в соц. сетях</span> <br><br>
+                <div class="icons">
+                    <a href="https://vk.com/radiotapok" class="item fa-vk link-vk"></a>
+                    <a href="https://www.youtube.com/c/RADIOTAPOK" class="item fa-youtube link-youtube"></a>
+                    <a href="https://vk.com/radiotapok" class="item fa-telegram link-tg"></a>
+                    <a href="https://www.instagram.com/radiotapok/" class="item fa-instagram link-inst"></a>
+                    <a href="https://www.twitch.tv/radio_tapok" class="item fa-twitch link-twitch"></a>
+                    <a href="https://www.facebook.com/radiotapok" class="item fa-facebook link-fbook"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <div class="logo"><img src="static/img/Logo.png" width="173.4px" height="47px" alt=""></div>
+            <div class="info-text">© Copyright <strong>GS INC.</strong></div>
+            <div class="footer-contacts"><span style="font-size: 20px; line-height: 28px;">gopcorn@gmail.com</span><br><span style="font-size: 16px; line-height: 28px;">г.Казань, ул. Бари Галеева, д. 3</span></div>
+        </div>
+    </footer>
+    <script src="static/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/bb7ad45ddf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
