@@ -43,11 +43,31 @@
                         к сотрудничеству и обмену информацией.
                     </p>
                 </div>
-                <div class="btn surround"> <a href="#contact-us" style="text-decoration: none; color: #fff">Задать
-                        вопрос</a> </div>
+                <div class="btn surround" id="buy-ticket-open-button">Купить билет</div>
+                
             </div>
         </div>
     </div>
+
+    <div class="modal-window" id="buy-ticket-modal">
+        <div class="modal-window-form">
+            <form action="">
+                <span class="close" id="buy-ticket-close-button">&times;</span>
+                <h2 class="title" style="font-family: Neucha; font-size: 32px;">Купить билет</h2>
+                <label for="">Ваша почта</label>
+                <input type="email" placeholder="Введите вашу почту...">
+                <label for="">Адрес концерта</label>
+                <input type="email" placeholder="Введите адрес...">
+                <label for="">Укажите дату</label>
+                <input type="date" placeholder="Введите дату...">
+                <label for="">Итоговая стоимость: <strong> ...₽ </strong> </label>
+                <div class="button-wrapper">
+                    <button type="submit">Купить</button>
+                </div>
+            </form> 
+        </div>
+    </div>
+
     <div class="section schedule" id="schedule">
         <div class="title"><span style="color:#424242;"><span
                     style="font-size:28px">★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★&nbsp;★</span></span>
