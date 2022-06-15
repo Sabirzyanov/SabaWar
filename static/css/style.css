@@ -25,7 +25,52 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 400px) {
+  .section {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 800px) {
+  .content,
+  .content-table {
+    width: 640px;
+    position: relative;
+  }
+
+  .section {
+    min-width: 640px;
+    padding: 20px 0 !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .content,
+  .content-table {
+    width: 768px;
+  }
+
+  .section {
+    min-width: 768px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content,
+  .content-table {
+    width: 940px;
+  }
+  .section {
+    min-width: 940px;
+  }
+}
+
 /* Header block */
+header.section {
+  padding: 0;
+}
+
 nav {
   width: 100%;
   height: 20%;
@@ -45,8 +90,11 @@ nav ul {
   align-items: center;
   float: right;
 }
-nav li {
+nav li {  
   list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 nav a:hover {
@@ -55,10 +103,13 @@ nav a:hover {
 }
 
 nav a {
+  display: block;
   color: black;
   text-decoration: none;
-  display: inline-block;
-  padding: 20px 75px;
+  line-height: 60px;
+  padding: 15px 35px;
+  cursor: pointer;
+  margin: 0 25px;
   cursor: pointer;
 }
 
@@ -178,11 +229,13 @@ nav a:focus:after {
 /* Schedule table */
 
 .content-table {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
 .table {
+  /* overflow-y: scroll; */
+  overflow-x: visible;
   font-size: 16px;
   min-width: 800px;
 }
@@ -490,6 +543,7 @@ footer .content {
   display: flex;
   justify-content: space-between;
   min-height: 0;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -527,6 +581,12 @@ footer .info-text {
   background-color: #eaeaea;
 }
 
+@media (max-width: 1220px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+
 /* Modal window */
 
 .modal-window {
@@ -537,7 +597,7 @@ footer .info-text {
   z-index: 15;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal-window-form {
